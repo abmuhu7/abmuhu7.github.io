@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha384-xzF0B46ZFZ04qwp8rU/2Njk5+hU65LHZnA8w/Ba9l6z49F/YFCzKc+DUaMnh0b8" crossorigin="anonymous">
+  <title>Welcome to AASTU University</title>
+</head>
+<body>
+  <div class="mad-elements">
+    <section id="HoMe" class="mad-section" onclick="moveSection('HoMe')">
+      <h2>HoMe,</h2>
+     
+    </section>
+
+    <section id="e-Library" class="mad-section" onclick="moveSection('eLibrary')">
+      <h2>e-liBrary,</h2>
+    
+    </section>
+
+    <section id="AboutUs" class="mad-section" onclick="moveSection('AboutUs')">
+      <h2>AbouT Us,</h2>
+    
+    </section>
+
+    <section id="ClassSchedule" class="mad-section" onclick="moveSection('ClassSchedule')">
+      <h2>class schEdUle,</h2>
+      
+    </section>
+
+    <section id="ContactUs" class="mad-section" onclick="moveSection('ContactUs')">
+      <h2>contact us,</h2>
+    
+    </section>
+ 
+    <section id="Login" class="mad-section" onclick="moveSection('Login')">
+      <h2>LOgiN</h2>
+     
+    </section>
+  </div>
+
+  <div id="errorMessage"></div>
+
+  <audio id="evilLaughAudio" src="evil_laugh.mp3"></audio>
+
+  <div class="mad-form">
+    <form onsubmit="return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Enter a valid email address">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      <label for="your message">your message:</label>
+      <input type="text" id="your message" name="your message" placeholder="Enter your message ">
+
+      <button type="button" onclick="showErrorMessage()">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
